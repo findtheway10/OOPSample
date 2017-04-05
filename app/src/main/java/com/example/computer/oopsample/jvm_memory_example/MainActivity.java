@@ -13,20 +13,30 @@ import com.example.computer.oopsample.R;
 public class MainActivity extends AppCompatActivity {
 
 
-    //class area
+    //?
     public static final int NUMBER = 1;
 
+    //?
     private String testMessage = "hello world";
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        //?
         setContentView(R.layout.activity_main);
+
+        //?
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+
+        //?
         setSupportActionBar(toolbar);
 
+        //?
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+
+        //?
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -35,28 +45,32 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //heap memory
+        //?
         Intent testIntent = new Intent();
 
     }
 
+    //?
+    public static void setHappy(){
 
+    }
 
-    /*
-    * stack memory
-    */
+    //?
     private void getRice(){
 
     }
 
+    //?
     private void washRice(){
         getRice();
     }
 
+    //?
     private void makeRice(){
         washRice();
     }
 
+    //?
     private void getDinner(){
         makeRice();
     }
